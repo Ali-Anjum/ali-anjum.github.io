@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link class="js-animate"
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <link class="js-animate" rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Web Nests A software developement company</title>
+  </head>
+  <body id="body" class="d-none" >
+    <section class="d-flex justify-content-around logo  w-100 header-section" data-aos="fade-down" style="position: fixed; z-index: 1;">
+      <img src="img/logo.svg" class="logo-img animate__animated animate__hinge animated" style="cursor: pointer;" />
+      <div class="d-flex justify-content-between align-items-center header-link" style="word-wrap: break-word;">
+          <a onclick="header_link(event)" class="body2 text-decoration-none selected texts texts-2" href="#home">Home</a>
+          <a onclick="header_link(event)" class="body2 text-decoration-none texts texts-2" href="#services">Services</a>
+          <a  onclick="header_link(event)"class="body2 text-decoration-none texts texts-2" href="#case-studies">Case studies</a>
+          <a  onclick="header_link(event)"class="body2 text-decoration-none texts texts-2" href="#blog">Blog</a>
+          <a onclick="header_link(event)" class="body2 text-decoration-none texts texts-2" href="#contact-us">Contact us</a>
+      </div>
+      <div>
+          <button id="color-change-button" class="register-now body2 d-flex"  onclick="scrollToSection('contact-us')">
+              Get a Quote--><i class="body1 arrow right"></i>
+          </button>
+      </div>
+  </section>
+    <section   class="home main-photo w-100 margin-section">
+      <div class="d-flex justify-content-between">
+        <div class=" my-auto">
+          <p  data-aos="fade-right" data-aos-id="super-duper" data-aos-easing="ease-in-out"class="head1 m-0 ">
+            <span id="change-section-1">leading the industry </span> <br /><span class="span-main-photo">
+              from 3 years</span
+            >
+          </p>
+          <p  class="main-photo-heading-pb body2 mb-0 ">
+            Where to grow your business as a photographer: site or social media?
+          </p>
+          <button class="register-now btn-margin body2 animate__animated animate__bounceIn " onclick="scrollToSection('contact-us')">Register</button>
+        </div>
+        <div class="d-flex">
+          <img  src="/img/main-img.svg" class=" photo-main-img " />
+        </div>
+      </div>
+    </section>
+    <section class="margin-section-2 clients" data-aos="fade" data-aos-once="true">
+      <div >
+        <div class="d-flex justify-content-center">
+          <h3 class="head2 text-center m-0" >Our clients</h3>
+        </div> 
+        <p class="body2 text-center   p-0 top-section-2">
+          Our recent clients are from all over the world
+        </p>
+        <div class="d-flex justify-content-center">
+          <img src="/img/Clients Logos .svg" class="w-100" />
+        </div>
+      </div>
+    </section> 
+    <section class="margin-section-2 ">
+        <div class="">
+          <p class="text-center head2 section-info-margin-first">
+            Who is Nextcent suitable for?
+
+          </p>
+          <p class="body2 text-center section-info-margin-second" data-aos="zoom-out-up"   data-aos-anchor-placement="top-center" 
+          >
+            We can assist companies of all kinds.
+          </p>
+        </div>
+        <div class="d-flex justify-content-between">
+            <div class="icons-3 drop-1" >
+              <div class="d-flex justify-content-center ">
+                <img
+                  src="/img/Icon.svg"
+                  class=" p-0 m-0 img-3-mem "
+                  
+                />
+              </div>
+
+                  <div class="text-center " >
+                    <p class="head3  member-org"  >Startups &<br> agencies </p>
+                  </div>
+                  <div class="text-center  p-0 m-0 ">
+                    <p class=" p-0 m-0 body2" data-aos="fade-left" data-aos-delay="50" >
+                      
+                        startups need a good online presence:<br>
+                        it helps reach people worldwide, build <br>
+                        trust make sales and scale <br>
+                              
+
+                    </p>
+                  </div>
+
+        
+            </div>
+            <div class="icons-3 drop-1" >
+              <div class="d-flex justify-content-center ">
+                <img
+                  src="/img/Icon (1).svg"
+                  class=" p-0 m-0 img-3-mem "
+                  
+                />
+              </div>
+              <div class="text-center">
+                <p class="head3  member-org">massive <br />organizations</p>
+              </div>
+              <div class="text-center  p-0 m-0">
+                <p class=" p-0 m-0 body2" data-aos="fade-down" data-aos-delay="50">
+                  A professionally developed website has<br>
+                  the potential to help large corporations<br>
+                    in resolving their difficulties.
+
+                </p>
+              </div>
+            </div>
+            <div class="icons-3 drop-1" >
+              <div class="d-flex justify-content-center ">
+                <img
+                  src="/img/Icon (2).svg"
+                  class=" p-0 m-0 img-3-mem "
+                  
+                />
+              </div>
+              <div class="text-center">
+                <p class="head3  member-org"> Groups &<br />NGOS</p>
+              </div>
+              <div class="text-center  p-0 m-0">
+                <p class=" p-0 m-0 body2" data-aos="slide-right" data-aos-delay="50" >
+                  Considering the excellent job you<br>
+                  are doing, why not allow others<br>
+                    to be affected by you?<br>
+
+                </p>
+              </div>
+            </div>
+          </div>
+      </section>
+    <section class="w-100 margin-section-2 drop-1" style="">
+      <div class="justify-content-center">
+        <div class="d-flex ">
+          <img src="/img/rafiki.svg" class="unseen-text-img "  />
+          <div class=" my-auto m-0 p-0 ">
+            <p class="head2 section-info-margin-second ">
+              How can a website's presence affect a company?
+
+            </p>
+            <p class="body3 m-0 p-0  " data-aos="fade" data-aos-easing="ease-in-out" >
+              A website increases trust, conversions, and outreach. It serves as a 24/7 information hub, strengthening professionalism and increasing brand visibility. It helps with marketing, e-commerce, and consumer involvement. A website is vital in today's digital market for remaining competitive and expanding your  organizations
+            </p>
+            <button class="register-now   btn-margin body2 " onclick="location.href='./blog.html'">Learn more</button>
+          </div>
+        </div>
+      </div>
+    </section>  
+    <section class=" margin-section-2 main-photo  info-custom-section-7 w-100 ">
+      <div class="d-flex row    ">
+        <div class="col-6 my-auto">
+          <p class="head2  m-0 p-0  ">
+            Helping a local <br /><span class="span-main-photo "
+              >Business reinvent itself</span
+            >
+          </p>
+          <p class="body2 stats-info " style="color: #18191f">
+            We reached here with our hard work and dedication
+          </p>
+        </div>
+        <div class="col-6 text-center my-auto">
+          <div class="row    " style="">
+              <div class="col d-flex div-info-2 pfooter" >
+                  <div class="  d-flex icon-padding-right   "  >
+                      <div class=" stat-padding-icon" >
+                      <img src="/img//1.svg" class="stats-info-img"  data-aos="fade-up" data-aos-delay="50"/>
+                    </div>
+                      <div class="  " data-aos="fade-up" data-aos-delay="200" >
+                        <p class="head3 m-0">150+</p>
+                        <p class="body2 p-0 m-0">Customers</p>
+                      </div>
+                    </div>
+                    <div class=" d-flex icon-padding-right    ">
+                      <div class=" stat-padding-icon" >
+                      <img src="/img//2.svg" class="stats-info-img" data-aos="fade-up" data-aos-delay="50" />
+                    </div>
+                      <div class="  "data-aos="fade-up" data-aos-delay="200">
+                        <p class="head3 m-0">98%</p>
+                        <p class="body2 p-0 m-0">Satisfaction rate</p>
+                      </div>
+                    </div>
+              </div>
+              <div class="col d-flex div-info-2 pfooter ">
+                  <div class=" d-flex icon-padding-right  ">
+                      <div class=" stat-padding-icon" >
+                      <img src="/img//3.svg" class="stats-info-img" data-aos="fade-up" data-aos-delay="50"/>
+                    </div>
+                      <div class=""data-aos="fade-up" data-aos-delay="200">
+                        <p class="head3 m-0">5000+</p>
+                        <p class="body2 p-0 m-0">Consumers</p>
+                      </div>
+                    </div>
+                    <div class="d-flex icon-padding-right  ">
+                      <div class=" stat-padding-icon" >
+                      <img src="/img//4.svg" class="stats-info-img" data-aos="fade-up" data-aos-delay="50" />
+                    </div>
+                      <div class="" data-aos="fade-up" data-aos-delay="200">
+                        <p class="head3 m-0">13000$</p>
+                        <p class="body2 p-0 m-0">Revenue generated</p>
+                      </div>
+                    </div>
+              </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>   
+    <section class="margin-section-2">
+      <div class="justify-content-center">
+        <div class="d-flex ">
+          <img src="/img/pana.svg" class="unseen-text-img"  />
+          <div class=" my-auto m-0 p-0  ">
+            <p class="head2 section-info-margin-second ">
+              Qualities an excellent website should have 
+
+            </p>
+            <p class="body3 m-0 p-0" data-aos="fade" data-aos-easing="ease-in-out">
+              <li class="body2">A stunning landing page</li>
+              <li class="body2">A visibile contact form</li>
+              <li class="body2">##### ####</li>
+              </p>
+            <button class="register-now   btn-margin body2 " onclick="location.href='./blog.html'">Learn more</button>
+          </div>
+        </div>
+      </div>
+    </section> 
+    <section id="services" class="margin-section-2 ">
+      <div class="section-info-margin-second d-flex item-div  " style="flex-wrap:wrap;">
+        <div class="item-1 item drop-1  logo mx-auto " >
+          <div class="section-info-margin-second " >
+            <img src="/img/ecom.gif"style="width: 20vw;" class=" mx-auto" >
+          </div>
+
+          <div class="head2 section-info-margin-first">Ecommerce<br> web developement</div>
+            <ul class="p-1  m-0 w-100 " >
+              <li class="body2" data-aos="fade-up" data-aos-delay="10">Custom Chat intergration</li>
+              <li class="body2" data-aos="fade-up" data-aos-delay="20">automatic payment system</li>
+              <li class="body2" data-aos="fade-up" data-aos-delay="100">Auto product deivery</li>
+              <li class="body2" data-aos="fade-up" data-aos-delay="200">User based suggestion</li>
+            </ul>
+
+        </div>
+        <div class="item-1 item drop-1   mx-auto " >
+          <div class="section-info-margin-second " >
+            <img src="/img/web.gif"style="width: 20vw;" class=" mx-auto" >
+          </div>
+          <div class="head2 section-info-margin-first">Web developement</div>
+            <ul class="p-1  m-0 w-100 " >
+              <li class="body2" data-aos="fade-up" data-aos-delay="10">High Quality web</li>
+              <li class="body2" data-aos="fade-up" data-aos-delay="20">beautifully crafted UI</li>
+              <li class="body2" data-aos="fade-up" data-aos-delay="100">Mobile friendly </li>
+              <li class="body2" data-aos="fade-up" data-aos-delay="200">High conversion rate </li>
+            </ul>
+
+        </div>
+        <div class="item-1 item drop-1   mx-auto " >
+          <div class="section-info-margin-second " ><img src="/img/seo.gif"style="width: 20vw;" class=" mx-auto" ></div>
+          <div class="head2 section-info-margin-first">optimizing website</div>
+            <ul class="p-1  m-0 w-100 " >
+              <li class="body2" data-aos="fade-up" data-aos-delay="10">Ranking websites on top</li>
+              <li class="body2" data-aos="fade-up" data-aos-delay="20"> increasing organic traffic</li>
+              <li class="body2" data-aos="fade-up" data-aos-delay="100">auditing websites with high end tools</li>
+              <li class="body2" data-aos="fade-up" data-aos-delay="200">High quality paid traffic </li>
+
+            </ul>
+
+        </div>          
+        <div class="item-1 item drop-1  logo mx-auto " >
+          <div class="section-info-margin-second " ><img src="/img/portal.gif"style="width: 20vw;" class=" mx-auto" ></div>
+          <div class="head2 section-info-margin-first">portal development</div>
+            <ul class="p-1  m-0 w-100 " data-aos-once="true">
+              <li class="body2" data-aos="fade-up" data-aos-delay="10">School and educational logins
+              </li>
+              <li class="body2" data-aos="fade-up" data-aos-delay="20">advanced Financial investment portal</li>
+              <li class="body2" data-aos="fade-up" data-aos-delay="100"> B2B& B2C Web based portals</li>
+              <li class="body2" data-aos="fade-up" data-aos-delay="200"> Community based ones</li>
+            </ul>
+
+        </div>
+        
+      </div>
+      <div class="d-flex justify-content-center p-0">
+        <button class="register-now btn-margin body2 w-50 ">Get a demo now</button>
+      </div>
+
+
+
+
+  </section>
+    <!--blog-->
+    <section id="blog"  class="margin-section-2 ">
+      <h1 class="text-center  head2 pb-0 mb-0">latest blogs</h1>
+      <p class="text-center pre-footer-p-text body2 top-section-2" data-aos="zoom-out"  data-aos-anchor-placement="top-right" data-aos-easing="ease-in-out">The Nexcent blog is the best place to read about the latest membership insights <br>, trends and more. See who's joining the community, read about how our <br> community are increasing their membership income and lot's more.​</p>
+      <div id="blog-div"  class="d-flex justify-content-between text-center" >
+        <div class=" pointer blog   blog-div ">
+          <img  src="/img/blog-1.jpg" class="bggs " />
+          <div  class=" text-center blog-box drop-8  pt-0 mt-0"  >
+
+            <p class="head4 p-0 m-0 text-up">
+              How a simple website  boosted people's conversion rate
+            </p>
+            <a class="head4 bgg p-0 m-0 text" href="./blog.html " >Readmore   <i class="fa-solid fa-arrow-right "></i></a>
+          </div>
+        </div>
+        <div class=" pointer blog   blog-div ">
+          <img  src="/img/blog-2.jpg" class="bggs " />
+          <div  class=" text-center blog-box drop-8  pt-0 mt-0 "  >
+
+            <p class="head4 p-0 m-0 text-up">
+              stratigical thinking that is required for every business
+            </p>
+            <a class="head4 bgg p-0 m-0 text" href="./blog.html " >Readmore   <i class="fa-solid fa-arrow-right "></i></a>
+          </div>
+        </div>
+        <div class=" pointer blog   blog-div ">
+          <img  src="/img/blog-3.jpg" class="bggs " />
+          <div  class=" text-center blog-box drop-8 pt-0 mt-0 "  >
+
+            <p class="head4 p-0 m-0 text-up">
+              Chosing right options for  business watch what experts say about it
+            </p>
+            <a class="head4 bgg p-0 m-0 text" href="./blog.html " >Readmore   <i class="fa-solid fa-arrow-right "></i></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!--case studies -->
+    <section id="case-studies" class="main-photo w-100 margin-section-2">
+      <div class="d-flex justify-content-center  bk  ">
+        <div class="my-auto  mx-auto ">
+          <p class="head1 m-0 text-center ">
+           Case  <span class="span-main-photo">
+              Studies</span
+            >
+          </p>
+          <p class="main-photo-heading-pb body2 mb-0 mx-auto" data-aos="fade-up" data-aos-id="super-duper" data-aos-easing="ease-in-out">
+            The way our team transformed incredibly inefficient enterprises into widely renowned corporations<br>
+            and helped startups to scale fast, big whales to generate more revenue and higher conversion rate <br>
+            take a look at those>
+
+          </p>
+          
+        </div>
+        <div class="d-flex">
+
+        </div>
+      </div>
+    </section>
+    <section class="margin-section">
+        <div class="w-100">
+          <div class="d-flex justify-content-center  section-info-margin-first">
+            <h3 class="head2 text-center m-0" data-aos="fade-right">Collection of web development Projects</h3>
+          </div> 
+
+          <div id="same" class="d-flex justify-content-center  web-type-div " style="">
+            <a class=" body2 head4 text-decoration-none selected texts type-web-item bg-white drop-1"onclick="header_link(event)" href="#">Ecommerce</a>
+            <a class="body2 text-decoration-none texts type-web-item" onclick="case_studies_link(event)" href="#same">Landing pages</a>
+            <a class="body2 text-decoration-none texts type-web-item"onclick="case_studies_link(event)" href="#same">Front-end</a>
+            <a class="body2 text-decoration-none texts type-web-item"onclick="case_studies_link(event)" href="#same">Backend</a>
+            <a class="body2 text-decoration-none texts type-web-item"onclick="case_studies_link(event)" href="#same">Misc</a>
+
+          </div>
+        </div>
+      </section>
+      <section id="case-study-1" class="margin-section section-case-p64 info-custom-section-7">
+        <div class="d-flex justify-content-between " data-aos="fade">
+          <div class="my-auto w-50  ">
+            <p class="head2 section-info-margin-first">
+              Allied group schools
+            </p>
+            <p class="body2 ">
+              A popular name in Schooling "Allied group of schools" had several difficulties in their web infracstructure. They Contacted <strong>Webnests</strong> for a reliable and professional work Take a look at our professionally crafted website
+            </p>
+            <a id="case-study-img-1" class="head4 text pointer section-info-margin-second" href="https://alliedschools.edu.pk/"> Visit the site</a>
+
+        </div>
+          <div >
+            <img class="photo-case-studies "    src="/img/allied-case-study-1.png">
+          </div>
+
+        </div>
+
+      </section>
+      <section id="case-study-1" class="margin-section section-case-p64 info-custom-section-7" style="background-color: white;">
+        <div class="d-flex justify-content-between " data-aos="fade-up">
+          <div >
+            <img  class="photo-case-studies  section-info-margin-second"   src="/img/apricot-case-study-2.png">
+          </div>
+
+        
+          <div class="my-auto w-50 ">
+            <p class="head2 section-info-margin-first">
+              Start-up web conversion issues
+            </p>
+            <p class="body2  ">
+              A Start-up named Apricot was having a financial crises due to their conversion % being too low After our <strong>Magic</strong> they are the top 100 companies in country 
+            </p>
+            <a  href="https://apricot.com.pk/" id="case-study-img-1" class="head4 text  ">Visit the site</a>
+
+          </div>
+        </div>
+
+
+      </section>
+      <section id="case-study-1" class="margin-section-2 section-case-p64 info-custom-section-7">
+        <div class="d-flex justify-content-between" data-aos="fade-down">
+          <div class="my-auto w-50  ">
+            <p class="head2 section-info-margin-first">
+              Ecommerce developement
+            </p>
+            <p class="body2 ">
+              One of our websites Montivo. This brand has a history of being top selling offline stores but when it comes to dealing online no ones perfect So Our team crafted a <strong>magnificient</strong> store according to consumers requirement
+            </p>
+            <a id="case-study-img-1" href="https://montivo.pk/collections/men-shorts" class="head4 text pointer section-info-margin-second">Visit the site</a>
+        </div>
+          <div>
+            <img class="photo-case-studies" onclick="window.location='www.1.com'""   src="/img/ecommerce -case-study-3.png ">
+          </div>
+
+        </div>
+
+      </section>
+      <section id="contact-us" class="margin-section contact-section letters " data-aos="fade-down" data-aos-once="true">
+        <p class="head1 section-info-margin-second text-center" data-aos="zoom-out-up" data-aos-delay="500" data-aos-once="true">Get A Quote</p>
+        <div class=" text-up contact-section-pre-div justify-content-between ">
+          <div class=" logo contact-section-div-1 input-form mr-auto mx-auto "  >
+            <div>
+              <p class="head2 section-info-margin-first" data-aos="zoom-out-up">
+                Lets Get in touch
+              </p>
+              <p class="body2  ">
+                we are free for suggestion
+                and jus for chat too
+              </p>
+            </div>
+            <div class="  contact-icon-div-2 pointer drop-1-hover  " style='margin-top: 16px;'>
+              <div class="d-flex justify-content-around">
+                <p class="head3   m-0 "id='head-info'>emails</p>
+
+               <button class="" style="border: none; background: none;" onclick="showinfo('email-us')">  <i class="fa-solid fa-bars  head2" ></i></button> 
+
+              </div>
+              <div id="email-us">
+                <div class="d-flex contact-icon-div     hover-info info-1 " >
+                  <i class="fa-solid fa-user contact-icon"  ></i>
+                  <a class="my-auto text body3 text-decoration-none texts pointer contact-link" style="padding-left: 8px;">email@email.com</a>
+                </div>
+                <div class="d-flex contact-icon-div     hover-info info-1 d-none " >
+                  <i class="fa-solid fa-user contact-icon"  ></i>
+                  <a class="my-auto text body3 text-decoration-none texts pointer contact-link" style="padding-left: 8px;">email@email.com</a>
+                </div>
+                <div class="d-flex contact-icon-div     hover-info info-1 d-none" >
+                  <i class="fa-solid fa-user contact-icon"  ></i>
+                  <a class="my-auto text body3 text-decoration-none texts pointer contact-link" style="padding-left: 8px;">email@email.com</a>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="  contact-icon-div-2 pointer drop-1-hover " style='margin-top: 16px;'>
+              <div class="d-flex justify-content-around">
+                <p class="head3   m-0 "id='head-info'>emails</p>
+
+               <button class="" style="border: none; background: none;" onclick="showinfo('contact')">  <i class="fa-solid fa-bars  head2"></i></button> 
+
+              </div>
+              <div id="contact">
+                <div class="d-flex contact-icon-div     hover-info info-1 " >
+                  <i class="fa-solid fa-user contact-icon"  ></i>
+                  <a class="my-auto text body3 text-decoration-none texts pointer contact-link" style="padding-left: 8px;">email@email.com</a>
+                </div>
+                <div class="d-flex contact-icon-div     hover-info info-1 d-none " >
+                  <i class="fa-solid fa-user contact-icon"  ></i>
+                  <a class="my-auto text body3 text-decoration-none texts pointer contact-link" style="padding-left: 8px;">email@email.com</a>
+                </div>
+                <div class="d-flex contact-icon-div     hover-info info-1 d-none" >
+                  <i class="fa-solid fa-user contact-icon"  ></i>
+                  <a class="my-auto text body3 text-decoration-none texts pointer contact-link" style="padding-left: 8px;">email@email.com</a>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="  contact-icon-div-2 pointer drop-1-hover " style='margin-top: 16px;'>
+              <div class="d-flex justify-content-around">
+                <p class="head3   m-0 "id='head-info'>emails</p>
+
+               <button class="" style="border: none; background: none;" onclick="showinfo('fre')">  <i class="fa-solid fa-bars  head2"></i></button> 
+
+              </div>
+              <div id="fre">
+                <div class="d-flex contact-icon-div     hover-info info-1 " >
+                  <i class="fa-solid fa-user contact-icon"  ></i>
+                  <a class="my-auto text body3 text-decoration-none texts pointer contact-link" style="padding-left: 8px;">email@email.com</a>
+                </div>
+                <div class="d-flex contact-icon-div     hover-info info-1 d-none " >
+                  <i class="fa-solid fa-user contact-icon"  ></i>
+                  <a class="my-auto text body3 text-decoration-none texts pointer contact-link" style="padding-left: 8px;">email@email.com</a>
+                </div>
+                <div class="d-flex contact-icon-div     hover-info info-1 d-none" >
+                  <i class="fa-solid fa-user contact-icon"  ></i>
+                  <a class="my-auto text body3 text-decoration-none texts pointer contact-link" style="padding-left: 8px;">email@email.com</a>
+                </div>
+              </div>
+
+
+            </div>
+
+
+
+          </div>
+          <div class="body1 drop-1 input-form mx-auto real-form">
+            <p class="head2 section-info-margin-second" data-aos="zoom-out-up">send us a msg</p><br>
+    
+    
+             <form action="https://api.web3forms.com/submit" method="POST">  
+              
+              <input type="hidden" name="check-js" id="check-js" value="0">
+                <input type="hidden" name="redirect" value="https://web3forms.com/success">  
+                <input  type="hidden" name="apikey" value="d21fa983-4034-46b8-bfdc-959c3d497b00">      
+            <div class="d-flex  section-info-margin-second" style="gap: 3%;" >
+             <div class="d-block  w-50">
+               <input type="text" name="'name" class="form-control input w-100 " id=" name" placeholder="Name" >
+             </div>
+             <div class="d-flex-e w-50 ml-auto ">
+    
+               <input type="text" name="company-name" class="form-control  w-100 "  id="service -type" style="align-items: right;"   placeholder="Type">
+             </div>
+            </div>
+            <div class=" d-block mail-input section-info-margin-second">
+    
+             <input class="w-100 form-control email w-100" name='email' placeholder="email"  required  >
+            </div>
+            <div class="d-flex  section-info-margin-second" style="gap: 3%;" >
+             <div class="d-block  w-50">
+    
+               <input type="text" name="phone number" class="form-control input w-100 " id="first-name" placeholder="Phone number">
+             </div>
+             <div class="d-flex-e w-50 ml-auto ">
+    
+               <input type="text" name="country" class="form-control  w-100  "  id="first-name" style="align-items: right;"   placeholder="Country">
+             </div>
+            </div>
+            <div class="send msg d-block">
+    
+             <textarea name="Message" class="w-100 h-100" class="form-control w-100" placeholder="Message" rows="3"></textarea>
+            </div>
+            <div class="h-captcha w-75" data-captcha="true"></div>
+            <button type="submit"  class="register-now btn-margin w-100"> Send --></button>
+
+           </form>
+    
+           </div>
+        </div>
+      </section>
+       <!-- done till now-->
+    <footer class="footer  w-100   footer"  >
+      <div class="d-flex pfooter">
+        <div class=" ">
+          <img
+            src="/img/footer-logo.svg"
+            class="text-white"
+            style="width: 10vw"
+          />
+          <p class="footer-copyright body4  mt-4">Copyright © 2020 Landify UI Kit.</p>
+          <p class="footer-copyright body3 " style="gap: 30px;">All rights reserved</p>
+         <div class="d-flefx" style="gap: 1px;">
+          <img src="/img/Social Icons-1.png" class="footer-imgs pointer"  >
+          <img src="/img/Social Icons-2.png" class="footer-imgs pointer">
+          <img src="/img/Social Icons-3.png" class="footer-imgs pointer">
+          <img src="/img/Social Icons.png" class="footer-imgs pointer">
+         </div>
+        </div>
+        <div class="text-white  mx-5 w-25">
+          <p class="head4 Heading-footer pointer">Company</p>
+          <li class="footer-copyright body4 my-3 pointer">About us</li>
+          <li class="footer-copyright body4 my-3 pointer">Blog</li>
+          <li class="footer-copyright body4 my-3 pointer">Contact us</li>
+          <li class="footer-copyright body4 my-3 pointer">Pricing</li>
+          <li class="footer-copyright body4 my-3 pointer">Testimonials</li>
+        </div>
+        <div class="text-white   body4 w-25">
+          <p class="head4 Heading-footer">Support</p>
+          <li class="footer-copyright body4 my-3 pointer">Help Center</li>
+          <li class="footer-copyright body4 my-3 pointer">Tos</li>
+          <li class="footer-copyright body4 my-3 pointer">Legal</li>
+          <li class="footer-copyright body4 my-3 pointer">Privacy Policy</li>
+          <li class="footer-copyright body4 my-3 pointer">Status</li>
+        </div>
+        <div class="text-white sign-up-div">
+          <p class="head4 Heading-footer">Stay upto date</p>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="apikey" value="d21fa983-4034-46b8-bfdc-959c3d497b00">
+            <input
+                name="emai-to-subscribe"
+              type="email"
+              class="form-sign-up rounded border-none"
+              placeholder="Type your name  "
+              required
+            />
+            <button class="register-now">
+                Subscribe
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </footer>
+  </body>
+    <script src="/js/index.js"> </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="/js/section-1.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+
+    
+</html>

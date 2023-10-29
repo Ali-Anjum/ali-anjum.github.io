@@ -1,0 +1,43 @@
+var x = document.getElementById('change-section-1');
+var i = 1;
+
+function section_1() {
+    fetch('../data/text.json')
+        .then(response => response.json())
+        .then(data => {
+            const textValue = data[i].text;
+            x.innerHTML = textValue;
+
+            var opacity = 0;
+            var increasing = true;
+
+            function changeOpacity() {
+                if (increasing) {
+                    opacity += 0.2;
+                } else {
+                    opacity -= 0.2;
+                }
+
+                x.style.opacity = opacity;
+
+                if (opacity >= 1) {
+                    increasing = false;
+                }
+
+                if (opacity <= 0 && !increasing) {
+                    i++;
+                    if (i >= data.length) {
+                        i = 0;
+                    }
+                    section_1();
+                } else {
+                    setTimeout(changeOpacity, 2000); // Adjust the time interval as needed
+                }
+            }
+
+            changeOpacity();
+        })
+        .catch(error => console.error('Error loading JSON:', error));
+}
+
+section_1();
